@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Upload</p>
+   <form id="upload_form" action="/upload" method="POST" enctype="multipart/form-data">
+      File Name: <input type="file" name="file">
+       Text : <input type="text" name="comment" placeholder="Enter comments">
+      <input type="submit" name="upload" value="Upload" >
+   </form>
+ <p>Download</p>
+   <form id="download_form" action="/download" method="POST">
+     File Name: <input type="text" name="filename" placeholder="Enter file name">
+     <input type="submit" name="download" value="download">
+   </form>
+
+   <p>Delete</p>
+   <form id="delete_form" action="/delete" method="POST">
+     File Name: <input type="text" name="filename" placeholder="Enter file name">
+	 <input type="submit" name="delete" value="delete">
+   </form>
+   <p>List</p>
+   <form id="list_form" action="/list" method="POST">
+     <input type="submit" name="list" value="list">
+   </form>
+    <p>Display File</p>
+   <form id="display_file" action="/display" method="POST">
+       File Name: <input type="text" name="file" placeholder="Enter file name">
+     <input type="submit" name="display" value="display">
+   </form>
+
+</body>
+</html>
